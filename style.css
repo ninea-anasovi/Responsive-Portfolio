@@ -1,12 +1,44 @@
 /* Global View */
+body{
+    margin: 0;
+}
+.container {
+    background-color: cyan;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.col {
+    background-color: darkmagenta;
+    min-height: 200px;
+    width: 30%;
+    margin: 20px 0px;
+}
+
+.hide-on-Descktop {
+    display: none;
+}
 
 /* Tablet View */
 @media (max-width: 768px){
+
+    .col{
+        width: 45%;
+    }
+
+    .hide-on-Descktop {
+        display: block;
+    }
 
 }
 
 /* Mobile View */
 @media (max-width: 400px){
-
+    .col{
+        width: 100%;
+    }
 }
