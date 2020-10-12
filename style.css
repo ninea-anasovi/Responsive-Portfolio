@@ -77,7 +77,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
 }
-nav a {
+.navbutton {
     border: solid white 1px;
     border-radius: 2px;
     padding: 11px 25px;
@@ -86,6 +86,10 @@ nav a {
 
 .highlight {
     font-weight: bold;
+}
+
+.mob-wrapper {
+    display: none;
 }
 
 
@@ -101,6 +105,39 @@ nav a {
         display: block;
     }
 
+    header {
+        position: relative;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    .mob-wrapper {
+        display: block;
+    }
+    
+    /* nav a {
+        display: block;
+        margin-left: 0;
+    } */
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding-top: 15px ;
+    } 
+    .mob-nav{
+        display: none;
+    }
+
+    .mob-navbutton {
+        display: block;
+    }
+
 }
 
 /* Mobile View */
@@ -108,4 +145,6 @@ nav a {
     .col{
         width: 100%;
     }
+
+
 }
